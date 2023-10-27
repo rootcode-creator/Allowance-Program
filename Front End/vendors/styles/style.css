@@ -1,0 +1,305 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --dark: #161824;
+    --lite-dark: #202334;
+    --signup-bg: #202334;
+    --login-bg: #202334;
+    --signup-color: cyan;
+    --login-color: #49e349;
+    --txt-color: whitesmoke;
+    --border-color: #161f36;
+}
+.mainBody {
+    background-image: url(../images/bgimage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header.home, header.reg {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 13px;
+}
+header.reg {
+    position: sticky;
+    top: 0;
+}
+header .projectTitle a {
+    font-size: 25px;
+    color: var(--txt-color);
+
+}
+header .notice a {
+    font-size: 26px;
+    color: green;
+    padding-right: 5cm;
+}
+header .signUp a button,
+header .logIn a button {
+    width: 110px;
+    box-sizing: none;
+    border: none;
+    outline: none;
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+header .signUp a button {
+    background-color: var(--signup-bg);
+    color: var(--signup-color);
+}
+header .logIn a button {
+    background-color: var(--login-bg);
+    color: var(--login-color);
+}
+header .signUp a button:hover,
+header .logIn a button:hover {
+    background-color: #2023348e;
+}
+.authentication {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.indexMain {
+    height: 100vh;
+    background-color: #202334c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.base {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+.base h1 {
+    color: ghostwhite;
+    font-size: 70px;
+}
+.base h2 {
+    color: gainsboro;
+    font-size: 40px;
+}
+.base h3 {
+    color: gainsboro;
+    font-size: 24px;
+    margin-top: 8cm;
+}
+
+.base p {
+    color: darkgray;
+    font-size: 15px;
+    text-align: center;
+    margin-top: cm;
+}
+.base .getStartedBtn a button {
+    margin-top: 10px;
+    border: 3px solid cyan;
+    background-color: #33ddff1a;
+    color: cyan;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.base .getStartedBtn a button:hover {
+    background-color: cyan;
+    color: var(--txt-color);
+}
+.secondaryBody {
+    background-color: var(--lite-dark);
+}
+
+.formHeading h1 {
+    text-align: center;
+    color: rgb(230, 227, 227);
+    padding-top: 27px;
+    padding-bottom: 33px;
+}
+.secondaryMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lite-dark);
+}
+form.signup {
+    width: 650px;
+    margin: 30px;
+    padding: 12px;
+    background-color: var(--dark);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+form.signup .formBody {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+form.signup .fields span {
+    color: var(--txt-color);
+    width: 39px;
+    margin-right: -2px;
+    background-color: #202334;
+    display: inline-block;
+    text-align: center;
+    padding: 9px;
+    border: 1px solid var(--border-color);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+form.signup .allFields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+form.signup .allFields .fields input {
+    width: 270px;
+    background-color: var(--lite-dark);
+    color: rgb(190, 185, 185);
+    box-shadow: none;
+    border: 1px solid var(--border-color);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 17px;
+    padding: 5px 8px;
+}
+form.signup .allFields .fields input:not(input[type="date"]) {
+    padding: 8px;
+}
+form.signup .allFields .fields input:focus {
+    border: 1px solid #80bdff;
+    outline: none;
+    box-shadow: none;
+}
+.captions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.captions .filedsLabel {
+    color: var(--txt-color);
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.options {
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+.options input[type="radio"] {
+    width: 20px;
+    cursor: pointer;
+} 
+.options input[type="radio"]:focus {
+    outline: none;
+}
+.options label {
+    color: var(--txt-color);
+    margin: 0 13px 0px 2px;
+}
+.submitDiv {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+.submitDiv button {
+    border: none;
+    color: white;
+    font-size: 20px;
+    background-color: cyan;
+    cursor: pointer;
+    padding: 10px 23px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.submitDiv button:hover {
+    background-color: rgb(5, 185, 185);
+}
+
+.new_remind {
+    padding: 30px 67px 12px 85px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember, .newAccount {
+    color: var(--txt-color);
+    font-size: 17px;
+}
+.remember input[type="checkbox"] {
+    cursor: pointer;
+}
+.remember label {
+    margin-left: 3px;
+}
+.newAccount a {
+    color: #007bff;
+}
+.newAccount a:hover {
+    color: #005FC3;
+}
+
+.showDataForm {
+    padding: 30px !important;
+    padding-bottom: 10px !important;
+}
+.showDataForm textarea {
+    background-color: var(--lite-dark);
+    color: var(--txt-color);
+    font-size: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 8px 13px;
+}

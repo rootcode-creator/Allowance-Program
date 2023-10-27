@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/styles/style.css">
+</head>
+<body class="secondaryBody">
+    <header class="reg">
+        <div class="projectTitle">
+            <a href="index.html">Project Name Here</a> 
+        </div>
+        <div class="authentication">
+            <div class="signUp">
+                <a href="signUp.html"><button title="Sign up">Sign Up</button></a>
+            </div>
+            <div class="logIn">
+                <a href="logIn.html"><button title="Log in">Log in</button></a>
+            </div>
+        </div>        
+    </header>
+    <main class="secondaryMain"> 
+        <form class="signup" action="demo.html" method="GET" enctype="application/x-www-form-urlencoded">
+            <div class="formHeading">
+                <h1>Sign Up Form</h1>
+            </div>
+            <div class="formBody">               
+                <div class="captions">
+                    <div class="filedsLabel">Enter First Name</div>
+                    <div class="filedsLabel">Enter Last Name</div>
+                    <div class="filedsLabel">Select Birth of date</div>
+                    <div class="filedsLabel">Enter NID number</div>
+                    <div class="filedsLabel">Enter Phone number</div>
+                    <!----------------- address ---------------------->
+                    <div class="filedsLabel">Enter division name</div>
+                    <div class="filedsLabel">Enter district name</div>
+                    <div class="filedsLabel">Enter post office</div>
+                    <div class="filedsLabel">Enter upozilla name</div>
+                    <div class="filedsLabel">Enter postal code</div>
+                    <div class="filedsLabel">Enter union name</div>
+                    <div class="filedsLabel">Select allowance type</div>
+                </div>
+                <div class="allFields">
+                    <div class="fields">
+                        <span><i class="fa fa-user"></i></span>
+                        <input type="text" placeholder="Enter first name" required>
+                    </div>
+                    <div class="fields">
+                        <span><i class="fa fa-user"></i></span>
+                        <input type="text" placeholder="Enter last name">
+                    </div>
+                    <div class="fields">
+                        <span><i class="fa fa-calendar"></i></span>
+                        <input type="date" required>
+                    </div>
+                    <div class="fields">
+                        <span><i class="fa fa-id-card"></i></span>
+                        <input type="number" placeholder="Enter NID number" required>
+                    </div>
+                    <div class="fields">
+                        <span><i class="fa fa-phone"></i></span>
+                        <input type="number" placeholder="Enter phone number" required>
+                    </div>
+                    <!------------------------ address ----------------------->
+                    <div class="fields">
+                        <span><i class="fa fa-map"></i></span>
+                        <input type="text" placeholder="Enter division name">
+                    </div>
+                    <div class="fields">
+                        <span><i class="fa fa-address-book"></i></span>
+                        <input type="text" placeholder="Enter district name">
+                    </div>
+                    <div class="fields">
+                        <span><i class="fa fa-envelope-open"></i></span>
+                        <input type="text" placeholder="Enter post office">
+                    </div>
+                    <div class="fields">
+                        <span><i class="fa fa-vcard"></i></span>
+                        <input type="text" placeholder="Enter upozilla name">
+                    </div>
+                    <div class="fields">
+                        <span><i class="fa fa-bank"></i></span>
+                        <input type="text" placeholder="Enter postal code">
+                    </div>
+                    <div class="fields">
+                        <span><i class="fa fa-map-o"></i></span>
+                        <input type="text" placeholder="Enter union name">
+                    </div>
+                    <div class="options">                          
+                        <input type="radio" name="type"><label for="Oldage">Old age</label> 
+                        <input type="radio" name="type"><label for="Disability">Disability</label>
+                        <input type="radio" name="type"><label for="Widowed">Widowed</label>
+                    </div>
+                </div>
+            </div>
+            <div class="submitDiv">
+                <button type="submit">Sign up <i class="fa fa-sign-in"></i></button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
